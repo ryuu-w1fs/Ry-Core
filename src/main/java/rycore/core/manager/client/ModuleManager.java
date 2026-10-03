@@ -32,7 +32,7 @@ import rycore.features.modules.combat.Reach;
 import rycore.features.modules.combat.TargetStrafe;
 import rycore.features.modules.combat.TriggerBot;
 import rycore.features.modules.combat.WallsBypass;
-import rycore.features.modules.misc.AntiAttack;
+import rycore.features.modules.misc.StreamerMode;import rycore.features.modules.misc.AntiAttack;
 import rycore.features.modules.misc.AntiCrash;
 import rycore.features.modules.misc.AntiServerRP;
 import rycore.features.modules.misc.AutoAuth;
@@ -151,6 +151,7 @@ public class ModuleManager implements IManager {
    public static PearlChaser pearlChaser = new PearlChaser();
    public static WorldTweaks worldTweaks = new WorldTweaks();
    public static NameProtect nameProtect = new NameProtect();
+   public static StreamerMode streamerMode = new StreamerMode();
    public static LagNotifier lagNotifier = new LagNotifier();
    public static AutoRespawn autoRespawn = new AutoRespawn();
    public static AspectRatio aspectRatio = new AspectRatio();

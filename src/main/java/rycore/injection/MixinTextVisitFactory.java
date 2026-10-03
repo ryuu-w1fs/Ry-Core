@@ -6,6 +6,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import rycore.core.manager.client.ModuleManager;
 import rycore.features.modules.misc.NameProtect;
+import rycore.features.modules.misc.StreamerMode;
 
 @Mixin(TextVisitFactory.class)
 public class MixinTextVisitFactory {
@@ -19,6 +20,7 @@ public class MixinTextVisitFactory {
       index = 0
    )
    private static String adjustText(String text) {
-      return !ModuleManager.nameProtect.isEnabled() ? text : NameProtect.protectText(text);
+      String result = ModuleManager.nameProtect.isEnabled() ? NameProtect.protectText(text) : text;
+      return StreamerMode.filter(result);
    }
 }
