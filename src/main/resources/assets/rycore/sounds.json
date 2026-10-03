@@ -1,0 +1,57 @@
+{
+  "keyrelease": {
+    "sounds": [
+      "rycore:keyrelease"
+    ]
+  },
+  "swipein": {
+    "sounds": [
+      "rycore:swipein"
+    ]
+  },
+  "swipeout": {
+    "sounds": [
+      "rycore:swipeout"
+    ]
+  },
+  "newcode_on": {
+    "sounds": [
+      "rycore:newcode_on"
+    ]
+  },
+  "newcode_off": {
+    "sounds": [
+      "rycore:newcode_off"
+    ]
+  },
+  "catlavan_on": {
+    "sounds": [
+      "rycore:catlavan_on"
+    ]
+  },
+  "catlavan_off": {
+    "sounds": [
+      "rycore:catlavan_off"
+    ]
+  },
+  "celestial_on": {
+    "sounds": [
+      "rycore:celestial_on"
+    ]
+  },
+  "celestial_off": {
+    "sounds": [
+      "rycore:celestial_off"
+    ]
+  },
+  "nursultan_on": {
+    "sounds": [
+      "rycore:nursultan_on"
+    ]
+  },
+  "nursultan_off": {
+    "sounds": [
+      "rycore:nursultan_off"
+    ]
+  }
+}

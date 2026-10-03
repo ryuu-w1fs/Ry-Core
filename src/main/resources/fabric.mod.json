@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "rycore",
+  "version": "Release",
+  "icon": "icon.png",
+  "name": "RyCore",
+  "description": "Better minecraft:
+- Inventory Animation
+- Boost FPS
+- Clear Ram",
+  "authors": [
+    {
+      "name": "vu_2007"
+    }
+  ],
+  "accessWidener": "rycore.accesswidener",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "rycore.Rycore"
+    ]
+  },
+  "mixins": [
+    "rycore.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": ">=1.21.11",
+    "java": ">=21"
+  },
+  "suggests": {
+    "sodium": "*",
+    "exordium": "*",
+    "starlight": "*",
+    "ias": "*",
+    "viafabricplus": "*"
+  }
+}
