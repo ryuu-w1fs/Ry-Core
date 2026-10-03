@@ -325,7 +325,7 @@ public abstract class MixinHandledScreen<T extends ScreenHandler> extends Screen
          context.getMatrices().translate(x1, y1);
          context.getMatrices().scale((float)scale, (float)scale);
          Immediate consumer = this.client.getBufferBuilders().getEntityVertexConsumers();
-         // 1.21.11: GameRenderer.getMapRenderer() da bi xoa, map ve qua MapRenderState.
+         // GameRenderer.getMapRenderer() da bi xoa, map ve qua MapRenderState.
       }
 
       context.getMatrices().popMatrix();

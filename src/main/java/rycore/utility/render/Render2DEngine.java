@@ -106,7 +106,7 @@ public class Render2DEngine {
    }
 
    public static void beginScissor(double x, double y, double endX, double endY) {
-      // 1.21.11: scissor thuoc tung GUI element (ScreenRect scissorArea), khong con
+      // scissor thuoc tung GUI element (ScreenRect scissorArea), khong con
       // la GPU state toan cuc, nen chi ghi lai vung cat de collector dung.
       int w = (int)Math.max(0.0, Math.ceil(endX - x));
       int h = (int)Math.max(0.0, Math.ceil(endY - y));

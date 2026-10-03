@@ -383,7 +383,7 @@ public class Animations extends Module {
       int light
    ) {
       if (!stack.isEmpty()) {
-         // 1.21.11: ItemRenderer.renderItem(...) da bi thay bang ItemRenderState,
+         // ItemRenderer.renderItem(...) da bi thay bang ItemRenderState,
          // phan ve item tren tay chua duoc port.
       }
    }

@@ -196,7 +196,7 @@ public final class Core {
 
    public void bobView(MatrixStack matrices, float tickDelta) {
       if (Module.mc.getCameraEntity() instanceof AbstractClientPlayerEntity playerEntity) {
-         // Tu 1.21.2 horizontalSpeed/strideDistance khong con tren PlayerEntity;
+         // tu ban moi horizontalSpeed/strideDistance khong con tren PlayerEntity;
          // trang thai bob view nam trong ClientPlayerLikeState (giong vanilla GameRenderer).
          ClientPlayerLikeState state = playerEntity.getState();
          float var6 = state.getReverseLerpedDistanceMoved(tickDelta);

@@ -7,7 +7,7 @@ import net.minecraft.util.math.Vec2f;
 /**
  * Doc/ghi input di chuyen cua nguoi choi.
  *
- * <p>Tu 1.21.2 lop {@link Input} khong con cac field {@code movementForward},
+ * <p>tu ban moi lop {@link Input} khong con cac field {@code movementForward},
  * {@code movementSideways}, {@code jumping}, {@code sneaking}. Thay vao do co
  * {@code movementVector} (Vec2f: x = sideways, y = forward) va {@code playerInput}
  * (record {@link PlayerInput} gom cac co nhan phim). Lop nay giu nguyen cach dung

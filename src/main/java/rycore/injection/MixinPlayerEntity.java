@@ -25,7 +25,7 @@ import rycore.features.modules.movement.Speed;
 
 @Mixin(value = PlayerEntity.class, priority = 800)
 public class MixinPlayerEntity {
-   // 1.21.11: attack() khong con goi setSprinting(false) nen khong co diem INVOKE
+   // attack() khong con goi setSprinting(false) nen khong co diem INVOKE
    // de chen; TAIL la tuong duong gan nhat (ap lai sprint sau khi danh xong).
    @Inject(method = "attack", at = @At("TAIL"))
    public void attackAHook(CallbackInfo callbackInfo) {
@@ -80,10 +80,10 @@ public class MixinPlayerEntity {
       }
    }
 
-   // 1.21.11: jump() khong con duoc override trong PlayerEntity;
+   // jump() khong con duoc override trong PlayerEntity;
    // hai hook da chuyen sang MixinEntityLiving.
 
-   // 1.21.11: PlayerEntity.eatFood da bi xoa; viec an item di qua
+   // PlayerEntity.eatFood da bi xoa; viec an item di qua
    // ConsumableComponent.
 
    @Inject(method = "getBlockInteractionRange", at = @At("HEAD"), cancellable = true)

@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 /**
  * Diem vao cho Rotations (xoay dau/than theo huong server) va module Hat.
  *
- * <p>Tam thoi khong hook: tu 1.21.2 {@code LivingEntityRenderer.render} nhan
+ * <p>Tam thoi khong hook: tu ban moi {@code LivingEntityRenderer.render} nhan
  * {@code (S renderState, MatrixStack, OrderedRenderCommandQueue, int)} thay vi nhan
  * entity. Ca bon hook cu deu doc/ghi truc tiep {@code headYaw}, {@code bodyYaw},
  * {@code lastHeadYaw}... tren entity - nhung gia tri nay gio duoc entity renderer

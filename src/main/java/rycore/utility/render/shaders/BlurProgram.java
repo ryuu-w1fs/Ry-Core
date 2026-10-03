@@ -49,7 +49,7 @@ public class BlurProgram {
    }
 
    public void use() {
-      // 1.21.11: khong con truy cap FBO tho (fbo id, beginWrite, glBlitFramebuffer).
+      // khong con truy cap FBO tho (fbo id, beginWrite, glBlitFramebuffer).
       // Viec sao chep framebuffer phai di qua GpuDevice/CommandEncoder, va shader
       // blur can duoc viet lai dang RenderPipeline - xem ReloadableShaderEffectManager.
       Framebuffer buffer = MinecraftClient.getInstance().getFramebuffer();

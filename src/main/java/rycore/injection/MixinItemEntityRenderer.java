@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 /**
  * Diem vao cua module ItemPhysics.
  *
- * <p>Tam thoi khong hook: tu 1.21.2 {@code BakedModel} va
+ * <p>Tam thoi khong hook: tu ban moi {@code BakedModel} va
  * {@code ItemRenderer.getModel(...)} da bi xoa, item duoc ve qua
  * {@code ItemRenderState} dung theo tung layer. ItemPhysics can danh sach
  * {@code BakedQuad} de xac dinh item phang hay khoi, va can ve lai model nhieu

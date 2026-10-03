@@ -14,7 +14,7 @@ import rycore.features.modules.Module;
 public class MixinMouse {
    @Inject(method = "onMouseButton", at = @At("HEAD"))
    public void onMouseButtonHook(long window, net.minecraft.client.input.MouseInput input, int action, CallbackInfo ci) {
-      // 1.21.11: button/mods gop vao record MouseInput.
+      // button/mods gop vao record MouseInput.
       int button = input.button();
       int mods = input.modifiers();
       if (window == Module.mc.getWindow().getHandle()) {

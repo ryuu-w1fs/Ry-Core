@@ -6,7 +6,7 @@ import net.minecraft.text.ClickEvent.Action;
 /**
  * Click event rieng cua RyCore de chat co the kich hoat lenh client.
  *
- * <p>Tu 1.21.5 {@link ClickEvent} tro thanh interface (moi Action la mot record
+ * <p>tu ban moi {@link ClickEvent} tro thanh interface (moi Action la mot record
  * rieng) nen khong con extends duoc; lop nay implements no va tu giu chuoi lenh.
  */
 public record ClientClickEvent(String value) implements ClickEvent {

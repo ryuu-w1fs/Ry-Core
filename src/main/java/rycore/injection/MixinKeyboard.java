@@ -16,7 +16,7 @@ import rycore.gui.clickui.ClickGUI;
 public class MixinKeyboard {
    @Inject(method = "onKey", at = @At("HEAD"), cancellable = true)
    private void onKey(long windowPointer, int action, net.minecraft.client.input.KeyInput input, CallbackInfo ci) {
-      // 1.21.11: key/scanCode/modifiers gop vao record KeyInput.
+      // key/scanCode/modifiers gop vao record KeyInput.
       int key = input.key();
       int scanCode = input.scancode();
       int modifiers = input.modifiers();

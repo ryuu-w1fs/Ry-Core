@@ -11,7 +11,7 @@ import rycore.core.manager.client.ModuleManager;
 
 @Mixin(WorldRenderer.class)
 public abstract class MixinWorldRenderer {
-   // 1.21.11: WorldRenderer.setupTerrain da bi xoa (terrain setup nam trong
+   // WorldRenderer.setupTerrain da bi xoa (terrain setup nam trong
    // FrameGraph/SectionRenderDispatcher), nen FreeCam khong con buoc duoc che do
    // spectator cho viec dung frustum.
 

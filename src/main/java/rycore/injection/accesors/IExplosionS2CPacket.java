@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
 /**
- * Tu 1.21.2 ExplosionS2CPacket la record: ba field playerVelocityX/Y/Z duoc gop
+ * tu ban moi ExplosionS2CPacket la record: ba field playerVelocityX/Y/Z duoc gop
  * thanh {@code playerKnockback} dang {@code Optional<Vec3d>} (rong khi khong co day lui).
  */
 @Mixin(ExplosionS2CPacket.class)

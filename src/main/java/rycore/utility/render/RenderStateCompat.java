@@ -8,7 +8,7 @@ import net.minecraft.util.math.MathHelper;
 /**
  * Dung {@link PlayerEntityRenderState} tu mot {@link PlayerEntity}.
  *
- * <p>Tu 1.21.2 cac model entity khong con nhan truc tiep entity: {@code setAngles} va
+ * <p>tu ban moi cac model entity khong con nhan truc tiep entity: {@code setAngles} va
  * {@code animateModel} doc tu mot doi tuong RenderState duoc entity renderer dien san
  * moi khung hinh. RyCore ve model nguoi choi ngoai luong render cua vanilla (PopEffect,
  * CustomModel) nen phai tu dien state nay.

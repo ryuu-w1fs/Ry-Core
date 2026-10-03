@@ -11,7 +11,7 @@ import rycore.core.manager.client.ModuleManager;
 
 @Mixin(LightmapTextureManager.class)
 public class MixinLightmapTextureManager {
-   // 1.21.11: getDarknessFactor(float) da bi xoa khoi LightmapTextureManager.
+   // getDarknessFactor(float) da bi xoa khoi LightmapTextureManager.
 
    @Inject(method = "getBrightness", at = @At("HEAD"), cancellable = true)
    private static void getBrightnessHook(DimensionType type, int lightLevel, CallbackInfoReturnable<Float> cir) {

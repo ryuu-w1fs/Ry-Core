@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 /**
  * Diem vao cho CustomModel chinh vi tri item tren tay.
  *
- * <p>Tam thoi khong hook: tu 1.21.2 {@code HeldItemFeatureRenderer.renderItem} nhan
+ * <p>Tam thoi khong hook: tu ban moi {@code HeldItemFeatureRenderer.renderItem} nhan
  * {@code (S renderState, ItemRenderState, ItemStack, Arm, MatrixStack,
  * OrderedRenderCommandQueue, int)} - khong con LivingEntity de CustomModel quyet dinh
  * co bien doi hay khong, va {@code ModelWithArms.setArmAngle} gio can RenderState.

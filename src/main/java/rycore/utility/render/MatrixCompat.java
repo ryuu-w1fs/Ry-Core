@@ -8,7 +8,7 @@ import org.joml.Matrix4f;
 /**
  * Lop tuong thich giua MatrixStack (3D) va Matrix3x2fStack (GUI 2D).
  *
- * <p>Tu 1.21.6 {@code DrawContext.getMatrices()} tra ve {@link Matrix3x2fStack} - mot
+ * <p>tu ban moi {@code DrawContext.getMatrices()} tra ve {@link Matrix3x2fStack} - mot
  * ma tran affine 2D - thay cho {@link MatrixStack} 4x4 truoc day. Toan bo tang HUD va
  * ClickGUI cua RyCore van tinh toan tren MatrixStack, nen can cau noi hai chieu.
  */

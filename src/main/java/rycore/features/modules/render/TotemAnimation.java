@@ -97,7 +97,7 @@ public class TotemAnimation extends Module {
          }
 
          Immediate immediate = mc.getBufferBuilders().getEntityVertexConsumers();
-         // 1.21.11: ItemRenderer.renderItem(...) da bi thay bang ItemRenderState;
+         // ItemRenderer.renderItem(...) da bi thay bang ItemRenderState;
          // totem bay chi con phan chuyen dong, chua ve lai model.
          matrixStack.pop();
          immediate.draw();

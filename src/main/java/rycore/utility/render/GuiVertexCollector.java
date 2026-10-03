@@ -18,7 +18,7 @@ import org.joml.Matrix3x2f;
 /**
  * {@link VertexConsumer} thu vertex de nap vao batch GUI cua 1.21.11.
  *
- * <p>Tu 1.21.6 {@link DrawContext} khong ve ngay ma gom moi phan tu vao
+ * <p>tu ban moi {@link DrawContext} khong ve ngay ma gom moi phan tu vao
  * {@code GuiRenderState}, roi engine ve ca batch mot luot cuoi frame. Code ve cu cua
  * VCore tu dung {@code BufferBuilder} roi {@code draw()} ngay lap tuc - nam ngoai
  * batch nen bi ghi de, va moi lenh ve thanh mot draw-call rieng.

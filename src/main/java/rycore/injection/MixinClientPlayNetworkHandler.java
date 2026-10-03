@@ -26,7 +26,7 @@ public class MixinClientPlayNetworkHandler {
    @Inject(method = "onEntityStatus", at = @At("HEAD"))
    private void hookPopEffectTotemStatus(@NotNull EntityStatusS2CPacket packet, CallbackInfo ci) {
       MinecraftClient client = MinecraftClient.getInstance();
-      // 1.21.11: forceMainThread khong con overload nhan MinecraftClient; hook nay
+      // forceMainThread khong con overload nhan MinecraftClient; hook nay
       // chay o @At("HEAD") nen da o main thread.
       if (client.world != null && packet.getStatus() == 35) {
          Entity entity = packet.getEntity(client.world);

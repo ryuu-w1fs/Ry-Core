@@ -84,10 +84,10 @@ public abstract class MixinGameRenderer {
       return ModuleManager.noRender.isEnabled() && ModuleManager.noRender.nausea.getValue() ? 0.0F : MathHelper.lerp(delta, first, second);
    }
 
-   // 1.21.11: GameRenderer.loadPrograms da bi xoa; shader tu tai qua
+   // GameRenderer.loadPrograms da bi xoa; shader tu tai qua
    // ShaderLoader nen khong con cho de reload satin.
 
-   // 1.21.11: updateCrosshairTarget/findCrosshairTarget da chuyen khoi
+   // updateCrosshairTarget/findCrosshairTarget da chuyen khoi
    // GameRenderer (raycast nam trong Camera/MinecraftClient), nen FreeCam va
    // NoEntityTrace khong con hook duoc o day.
 
@@ -168,7 +168,7 @@ public abstract class MixinGameRenderer {
       }
    }
 
-   // 1.21.11: GameRenderer.renderFloatingItem da bi xoa (hieu ung totem ve
+   // GameRenderer.renderFloatingItem da bi xoa (hieu ung totem ve
    // trong InGameHud), nen TotemAnimation khong hook duoc o day.
 
    @Inject(method = "tiltViewWhenHurt", at = @At("HEAD"), cancellable = true)

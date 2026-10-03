@@ -200,7 +200,7 @@ public final class PopEffect extends Module {
          );
       matrices.multiply(RotationAxis.POSITIVE_Y.rotation(MathUtility.rad(180.0F - entity.bodyYaw + yRotYaw)));
       preparePlayerScale(matrices);
-      // 1.21.11: model doc tu PlayerEntityRenderState thay vi nhan entity truc tiep.
+      // model doc tu PlayerEntityRenderState thay vi nhan entity truc tiep.
       model.setAngles(RenderStateCompat.of(entity, Render3DEngine.getTickDelta()));
       BufferBuilder buffer = Tessellator.getInstance().begin(DrawMode.QUADS, VertexFormats.POSITION);
       model.render(matrices, buffer, 15728880, OverlayTexture.DEFAULT_UV);
@@ -484,7 +484,7 @@ public final class PopEffect extends Module {
 
    @NotNull
    private PlayerEntityModel createPlayerModel() {
-      // 1.21.11: EntityRendererFactory.Context da bi xoa; ModelPart lay tu
+      // EntityRendererFactory.Context da bi xoa; ModelPart lay tu
       // LoadedEntityModels cua client.
       PlayerEntityModel model = new PlayerEntityModel(
          mc.getLoadedEntityModels().getModelPart(EntityModelLayers.PLAYER), false

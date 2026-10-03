@@ -40,7 +40,7 @@ public final class RycoreUtility {
    }
 
    public static Identifier getCustomImg(String name) throws IOException {
-      // 1.21.11: TextureManager.registerDynamicTexture() da bi xoa; tu dat Identifier
+      // TextureManager.registerDynamicTexture() da bi xoa; tu dat Identifier
       // roi goi registerTexture.
       String id = "vc-" + name + "-" + (int)MathUtility.random(0.0F, 1000.0F);
       Identifier identifier = Identifier.of("rycore", id.toLowerCase());

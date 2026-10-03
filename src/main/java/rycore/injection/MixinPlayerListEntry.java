@@ -39,7 +39,7 @@ public class MixinPlayerListEntry {
          this.ensureFriendCape();
          if (this.customCapeTexture != null) {
             SkinTextures prev = (SkinTextures)cir.getReturnValue();
-            // 1.21.11: SkinTextures nhan AssetInfo.TextureAsset (co ca id() va
+            // SkinTextures nhan AssetInfo.TextureAsset (co ca id() va
             // texturePath()), khong phai Identifier.
             Identifier capeId = this.customCapeTexture;
             net.minecraft.util.AssetInfo.TextureAsset cape = new net.minecraft.util.AssetInfo.TextureAsset() {

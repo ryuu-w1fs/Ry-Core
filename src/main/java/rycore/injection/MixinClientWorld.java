@@ -50,6 +50,6 @@ public class MixinClientWorld {
       }
    }
 
-   // 1.21.11: ClientWorld.getSkyColor() da bi xoa (mau troi tinh trong
+   // ClientWorld.getSkyColor() da bi xoa (mau troi tinh trong
    // DimensionEffects/SkyRendering), nen WorldTweaks khong doi duoc mau suong mu.
 }

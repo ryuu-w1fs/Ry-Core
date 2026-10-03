@@ -38,7 +38,7 @@ public abstract class MixinMultiplayerScreen extends Screen {
       }
    }
 
-   // 1.21.11: render() khai bao o Screen chu khong o MultiplayerScreen nen
+   // render() khai bao o Screen chu khong o MultiplayerScreen nen
    // khong inject duoc; tick() chay moi frame-tick va la cho hop ly de don button.
    @Inject(method = "tick", at = @At("HEAD"))
    private void removeRandomAltWhenUnhooked(CallbackInfo ci) {
@@ -48,6 +48,6 @@ public abstract class MixinMultiplayerScreen extends Screen {
       }
    }
 
-   // 1.21.11: render() khai bao o Screen nen khong inject duoc; viec ve text
+   // render() khai bao o Screen nen khong inject duoc; viec ve text
    // account can DrawContext, khong the chuyen sang init()/tick().
 }

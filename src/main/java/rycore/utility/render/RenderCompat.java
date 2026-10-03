@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Lop tuong thich cho tang render 3D (ve trong world).
  *
- * <p>Tu 1.21.2 toan bo GPU state dong da bi bo: {@code RenderSystem.enableBlend()},
+ * <p>tu ban moi toan bo GPU state dong da bi bo: {@code RenderSystem.enableBlend()},
  * {@code blendFunc()}, {@code depthMask()}, {@code disableCull()} khong con ton tai.
  * Blend, depth va cull gio duoc nuong cung vao tung RenderPipeline dung san.
  *

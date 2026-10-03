@@ -82,7 +82,7 @@ public class ItemPhysics extends Module {
                matrices.translate(x, y, z);
             }
 
-            // TODO(1.21.11): ve lai qua ItemRenderState thay cho BakedModel da bi xoa.
+            // Can ve lai qua ItemRenderState (BakedModel khong con).
             matrices.pop();
          }
 
@@ -150,7 +150,7 @@ public class ItemPhysics extends Module {
 
       for (BakedQuad _quad : quads) {
          for (int i = 0; i < 4; i++) {
-            // 1.21.11: BakedQuad la record, vi tri dinh lay qua getPosition(i)
+            // BakedQuad la record, vi tri dinh lay qua getPosition(i)
             // thay cho mang int vertexData cu.
             Direction face = _quad.face();
             org.joml.Vector3fc pos = _quad.getPosition(i);

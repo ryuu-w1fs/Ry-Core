@@ -173,7 +173,7 @@ public class CustomModel extends Module {
       if (this.mode.getValue() != CustomModel.Mode.Rabbit || !this.shouldApply(player)) {
          return false;
       } else {
-         // 1.21.11: co hien cape nam trong PlayerEntityRenderState, khong con tren entity.
+         // co hien cape nam trong PlayerEntityRenderState, khong con tren entity.
          return !player.isInvisible() && !player.getEquippedStack(EquipmentSlot.CHEST).isOf(Items.ELYTRA);
       }
    }
@@ -189,7 +189,7 @@ public class CustomModel extends Module {
    }
 
    private void applyVanillaCapeRotation(MatrixStack matrices, AbstractClientPlayerEntity player, float tickDelta) {
-      // 1.21.11: capeX/capeY/capeZ (va ban prev*) da chuyen vao
+      // capeX/capeY/capeZ (va ban prev*) da chuyen vao
       // PlayerEntityRenderState, khong con doc duoc tu entity. Khong co du lieu
       // de tinh goc lac cape theo chuyen dong, nen cape ve o goc tinh.
       matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(6.0F));

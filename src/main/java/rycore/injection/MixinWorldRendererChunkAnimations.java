@@ -13,6 +13,6 @@ import rycore.utility.render.chunk.ChunkAnimations;
 
 @Mixin(WorldRenderer.class)
 public abstract class MixinWorldRendererChunkAnimations {
-   // 1.21.11: WorldRenderer.renderLayer va GlUniform.set(FFF) da bi xoa;
+   // WorldRenderer.renderLayer va GlUniform.set(FFF) da bi xoa;
    // chunk animation can viet lai theo RenderPipeline/UBO.
 }

@@ -10,5 +10,5 @@ import rycore.utility.render.chunk.ChunkAnimations;
 
 @Mixin(BuiltChunk.class)
 public class MixinChunkBuilderBuiltChunk {
-   // 1.21.11: BuiltChunk.setOrigin da bi xoa (origin la field final Mutable).
+   // BuiltChunk.setOrigin da bi xoa (origin la field final Mutable).
 }

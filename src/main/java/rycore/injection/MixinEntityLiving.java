@@ -49,7 +49,7 @@ public class MixinEntityLiving implements IEntityLiving {
       }
    }
 
-   // 1.21.11: updateTrackedPositionAndAngles la final tren Entity (khong phai
+   // updateTrackedPositionAndAngles la final tren Entity (khong phai
    // LivingEntity) nen khong inject duoc; dung tick() thay the.
    @Inject(method = "tick", at = @At("HEAD"))
    private void updateTrackedPositionAndAnglesHook(CallbackInfo ci) {

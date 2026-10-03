@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 /**
  * Diem vao cua CustomModel (texture va pham vi render cua model nguoi choi).
  *
- * <p>Tam thoi khong hook: tu 1.21.2 ca ba method cu doi chu ky sang RenderState -
+ * <p>Tam thoi khong hook: tu ban moi ca ba method cu doi chu ky sang RenderState -
  * {@code render(S, MatrixStack, OrderedRenderCommandQueue, CameraRenderState)} va
  * {@code getTexture(PlayerEntityRenderState)} - khong con
  * {@code AbstractClientPlayerEntity} de CustomModel nhan dien nguoi choi dang ve.

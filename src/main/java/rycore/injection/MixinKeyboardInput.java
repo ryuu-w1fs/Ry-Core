@@ -17,7 +17,7 @@ public class MixinKeyboardInput {
    @Unique
    private boolean rycore$clearMovementInput;
 
-   // 1.21.11: field 'sneaking' da bi bo (gop vao PlayerInput) nen khong con
+   // field 'sneaking' da bi bo (gop vao PlayerInput) nen khong con
    // diem FIELD de chen; dung HEAD cua tick().
    @Inject(method = "tick", at = @At("HEAD"), cancellable = true)
    private void onSneak(CallbackInfo ci) {

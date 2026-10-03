@@ -23,7 +23,7 @@ public abstract class MixinEntityRenderer<T extends Entity> {
       net.minecraft.client.render.state.CameraRenderState cameraState,
       CallbackInfo info
    ) {
-      // 1.21.11: khong con entity de kiem tra instanceof ArmorStandEntity;
+      // khong con entity de kiem tra instanceof ArmorStandEntity;
       // RenderState khong mang kieu entity nen chi con tat theo setting.
       if (ModuleManager.noRender.isEnabled() && ModuleManager.noRender.noArmorStands.getValue()) {
          info.cancel();

@@ -11,7 +11,7 @@ import net.minecraft.registry.tag.ItemTags;
 /**
  * Kiem tra loai item theo tag/component.
  *
- * <p>Tu 1.21.2 cac class {@code SwordItem}, {@code PickaxeItem}, {@code AxeItem},
+ * <p>tu ban moi cac class {@code SwordItem}, {@code PickaxeItem}, {@code AxeItem},
  * {@code ShovelItem}, {@code ArmorItem} va {@code ElytraItem} da bi xoa: moi item
  * dung chung {@code Item} va phan loai bang tag hoac data component.
  */

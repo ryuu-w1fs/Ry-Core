@@ -15,6 +15,6 @@ import rycore.features.modules.render.Tooltips;
 
 @Mixin(ShulkerBoxBlock.class)
 public class MixinShulkerBoxBlock {
-   // 1.21.11: Block.appendTooltip da bi xoa; tooltip di qua
+   // Block.appendTooltip da bi xoa; tooltip di qua
    // TooltipAppender cua component.
 }

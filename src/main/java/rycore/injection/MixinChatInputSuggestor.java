@@ -41,7 +41,7 @@ public abstract class MixinChatInputSuggestor {
    )
    public void refreshHook(CallbackInfo ci) {
       if (!Module.fullNullCheck()) {
-         // 1.21.11: khong con capture local StringReader; tu dung tu textField.
+         // khong con capture local StringReader; tu dung tu textField.
          StringReader reader = new StringReader(this.textField.getText());
          if (reader.canRead(Managers.COMMAND.getPrefix().length()) && reader.getString().startsWith(Managers.COMMAND.getPrefix(), reader.getCursor())) {
             reader.setCursor(reader.getCursor() + 1);

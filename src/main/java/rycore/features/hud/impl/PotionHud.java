@@ -132,7 +132,7 @@ public class PotionHud extends HudElement {
          float separatorX = durationRightX - maxDurationWidth - 4.0F;
          context.getMatrices().pushMatrix();
          context.getMatrices().translate(this.getPosX() + 2.0F, this.getPosY() + 16.0F + y_offset);
-         // 1.21.11: sprite hieu ung lay qua AtlasManager voi SpriteIdentifier; tam bo icon.
+         // sprite hieu ung lay qua AtlasManager voi SpriteIdentifier; tam bo icon.
          context.getMatrices().popMatrix();
          FontRenderers.sf_bold_mini
             .drawString(
